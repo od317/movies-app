@@ -1,0 +1,10 @@
+@import 'home.css';
+
+html body{
+    background-color: rgb(24, 24, 27);
+
+}
+.none{
+  width: 100vw;    
+  height: 9vh;
+}
