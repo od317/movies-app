@@ -1,7 +1,13 @@
 @import 'home.css';
+@import 'search.css';
+
+:root{
+ --bg: #141514;
+ --tc: white;
+}
 
 html body{
-    background-color: rgb(24, 24, 27);
+    background-color: var(--bg);
 
 }
 .none{

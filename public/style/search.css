@@ -1,0 +1,59 @@
+.search-text{ 
+    margin-left: 5%;
+}
+
+.contanier-flex{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contanier{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5%;
+    padding-bottom: 2rem;
+}
+
+
+.cont-card{
+    width: 100%;
+    position: relative;
+}
+
+.search-card{
+    position: relative;
+}
+
+.search-card img{
+    height: 100%;
+}
+
+.search-card .hid-card{
+    background-color:var(--tc);
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    height: 40%;
+    transform: translateY(-98%);
+    transition: 0.5s ease-out;   
+}
+
+.search-card:hover  .hid-card{
+    opacity: 100%;
+}
+
+
+.search-form{
+    width: 80%;
+    max-width: 300px;
+    padding: 1rem;
+}
+
+.search-form button{
+    border-radius: 10px;
+    background-color: whtie;
+    
+}

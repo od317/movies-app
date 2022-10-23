@@ -18,4 +18,9 @@ app.get('/',(req,res)=>{
 })
 
 
+app.post('/search',(req,res)=>{
+    res.render('search',{searchlabel:`${req.body.searchq}`});
+})
+
+
 app.listen(PORT);
