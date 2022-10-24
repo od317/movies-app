@@ -2,7 +2,7 @@ const searchq = document.querySelector('.searchq');
 const container = document.querySelector('.contanier');
 
 
-fetchapi(`https://imdb-api.com/API/AdvancedSearch/k_bb3vvmqp?title=${searchq.innerHTML}&count=250`);
+fetchapi(`https://imdb-api.com/API/AdvancedSearch/k_bb3vvmqp?title=${searchq.innerHTML}&count=100`);
 
 async function fetchapi(url){
 console.log(url);
