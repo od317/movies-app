@@ -38,43 +38,190 @@
     <button class="" type="submit">Search</button>
   </form>
 
+  
+
+
+  
+
+
 </div>
 
 
 <label class="search-text">Results for <label for="" class="searchq"><%= locals.searchlabel  %></label> :</label>
 
+
+
 <div class="contanier-flex">
 <div class="contanier">
+ 
+ 
+ 
+  <div class="search-card">
+    <img src="img/g1.jpg" class="cont-card">
+    <div class="hid-card">
+    <label class="card-title">${e.title}</label>
+    <label class="rating">Rating: ${e.imDbRating}</label>
+    </div>
+    <button class="card-button">watch</button>
+  </div>
+
+
+
 
   <div class="search-card">
     <img src="img/g1.jpg" class="cont-card">
     <div class="hid-card">
     <label class="card-title">${e.title}</label>
+    <label class="rating">Rating: ${e.imDbRating}</label>
     </div>
-    <button class="card-button">watch</button>
+  
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="modalbut" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  watch
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">${e.title}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex justify-content-center mb-2">
+        <img src="img/g1.jpg" alt="" class="modal-img">
+      </div>
+
+      <p>year: e.year</p>
+      <p>runtimeStr : e.runtimeStr</p>
+      <p>genres: e.genres genres genres</p>
+      <p>contentRating: contentRating</p>
+      <p>imDbRating : imDbRating</p>
+      <p>plot": "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",</p>
+      <p>actors : Matt Reeves, Robert Pattinson, Zoë Kravitz, Jeffrey Wright, Colin Farrell</p>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
   </div>
 
 
 
-  <div class="search-card">
-    <img src="img/g1.jpg" class="cont-card">
-    <div class="hid-card">
-    <p class="card-title">${e.title}</p>
-    <label class="rating">Rating:</label>
-    </div>
-    <button class="card-button">watch</button>
-  </div>
 
-  
-  
   <div class="search-card">
     <img src="img/g1.jpg" class="cont-card">
     <div class="hid-card">
     <label class="card-title">${e.title}</label>
+    <label class="rating">Rating: ${e.imDbRating}</label>
+    </div>
+    <button class="card-button">watch</button>
+
+
+    <div class="modal-dialog modal-dialog-centered">
+      ...
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+  <div class="search-card">
+    <img src="img/g1.jpg" class="cont-card">
+    <div class="hid-card">
+    <label class="card-title">${e.title}</label>
+    <label class="rating">Rating: ${e.imDbRating}</label>
     </div>
     <button class="card-button">watch</button>
   </div>
 
+
+
+
+
+
+
+  <div class="search-card">
+    <img src="img/g1.jpg" class="cont-card">
+    <div class="hid-card">
+    <label class="card-title">${e.title}</label>
+    <label class="rating">Rating: ${e.imDbRating}</label>
+    </div>
+    <button class="card-button">watch</button>
+  </div>
+
+
+
+
+
+
+
+  <div class="search-card">
+    <img src="img/g1.jpg" class="cont-card">
+    <div class="hid-card">
+    <label class="card-title">${e.title}</label>
+    <label class="rating">Rating: ${e.imDbRating}</label>
+    </div>
+    <button class="card-button">watch</button>
+  </div>
+
+
+
+
+
+  <div class="search-card">
+    <img src="img/g1.jpg" class="cont-card">
+    <div class="hid-card">
+    <label class="card-title">${e.title}</label>
+    <label class="rating">Rating: ${e.imDbRating}</label>
+    </div>
+    <button class="card-button">watch</button>
+  </div>
+
+
+
+
+
+  <div class="search-card">
+    <img src="img/g1.jpg" class="cont-card">
+    <div class="hid-card">
+    <label class="card-title">${e.title}</label>
+    <label class="rating">Rating: ${e.imDbRating}</label>
+    </div>
+    <button class="card-button">watch</button>
+  </div>
+
+
+
+
 </div>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+

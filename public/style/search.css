@@ -13,7 +13,8 @@
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 5%;
+    grid-column-gap: 5%;
+    grid-row-gap: 3.6rem;
     padding-bottom: 2rem;
 }
 
@@ -69,9 +70,38 @@
     font-size:.6rem;
     padding: .4rem;
 }
-.card-button{
-   margin-top: .3rem;
-   border-radius: 10px;
-   outline: none;
-   border: none;
+
+
+
+.header-rec {
+    margin-top: .5rem;
+    border-radius: 8px;
+    align-items: baseline;
+    padding: .4rem;
+    background-color: var(--theme-color);
+    margin-left: 1rem;
+    display: inline-block;
+  }
+  
+
+.modalbut{
+    margin-top: .3rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+
+.modal-content .modal-header,.modal-content .modal-body,.modal-content .modal-footer{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    border: none;
+}
+
+
+.modal-img{
+
+border-radius: 9px;
+width: 70%;
+height: 90%;
 }
