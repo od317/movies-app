@@ -28,4 +28,22 @@ app.post('/search',(req,res)=>{
 })
 
 
+
+app.get('/view',(req,res)=>{
+    res.render('view',
+    {
+        title:req.query.title,
+        img:req.query.img,
+        rate:req.query.rate,
+        contentRating:req.query.contentRating,
+        year:req.query.year,
+        genres:req.query.genres,
+        runtimeStr:req.query.runtimeStr,    
+        plot:req.query.plot,
+        actors:req.query.actors,
+        id:req.query    .id
+    });
+})
+
+
 app.listen(PORT);

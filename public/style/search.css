@@ -84,10 +84,14 @@
   }
   
 
-.modalbut{
+.viewbut{
     margin-top: .3rem;
+    padding: .3rem;
     border-radius: 10px;
     outline: none;
+    color:black;
+    text-decoration: none;
+    background-color: white;
     border: none;
 }
 
@@ -108,31 +112,7 @@ height: 90%;
 
 
 
-.video{
-    width: 90% ;
-    height: 30vh;
-    margin-top: 1rem;
-}
 
-.tbutc{
-    background-color: rgb(15, 15, 15);
-    width: 90%;
-    padding: 3rem;
-}
-
-.tbut{
-   border-radius: 50%;
-   height: 50px;
-   width: 50px;
-   font-size: 0;
-   border: none;
-   background-color: rgb(44, 44, 44);
-}
-
-.arrow{
-    font-size: 2rem;
-    color: rgb(15, 15, 15);
-}
 
 .id{
     display: none;

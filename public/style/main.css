@@ -1,5 +1,6 @@
 @import 'home.css';
 @import 'search.css';
+@import 'view.css';
 
 :root{
  --bg: #141514;
@@ -8,6 +9,7 @@
 
 html body{
     background-color: var(--bg);
+    color:white;
 
 }
 .none{

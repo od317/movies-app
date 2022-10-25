@@ -1,0 +1,55 @@
+.view-header{
+
+    padding: 2rem;
+
+}
+
+.view-title{
+    font-size: 2rem;
+}
+
+.view-sec{
+    padding: 1.3rem;
+}
+
+.sec-label{
+    margin-bottom: .5rem;
+}
+
+
+
+
+
+.video-flex{
+}
+
+
+
+.tbutc{
+    background-color: rgb(15, 15, 15);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    padding: 3rem;
+}
+
+.tbut{
+   border-radius: 50%;
+   height: 50px;
+   width: 50px;
+   font-size: 0;
+   border: none;
+   background-color: rgb(44, 44, 44);
+}
+
+.arrow{
+    font-size: 2rem;
+    color: rgb(15, 15, 15);
+}
+
+
+.view-id{
+    display: none;
+}
