@@ -2,7 +2,12 @@ const express = require('express');
 const app = express();
 const expresslay  = require('express-ejs-layouts');
 const method = require('method-override');
+const cors = require('cors');
 const PORT = process.env.PORT || 3000;
+
+app.use(cors({
+    origin:'https://www.youtube.com/',
+}));
 
 
 app.use(express.json());

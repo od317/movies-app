@@ -38,7 +38,25 @@ res.forEach(e => {
           <div class="d-flex justify-content-center mb-2">
           <img src="${e.image}" alt="" class="modal-img">
         </div>
-  
+
+
+
+
+        <div class="d-flex justify-content-center mb-2 tbutf">
+        
+        <div class="tbutc d-flex justify-content-center mb-2">
+        <button class="tbut" >${e.id}<ion-icon name="arrow-dropright" class="arrow"></ion-icon></button>  
+      </div>
+   
+      </div>
+
+      <div class="d-flex justify-content-center mb-3 video-flex">
+      
+    </div>
+
+
+
+        <P class="id">${e.id}</P>
         <p>year: ${e.description}</p>
         <p>runtimeStr: ${e.runtimeStr}</p>
         <p>genres: ${e.genres}</p>
@@ -60,9 +78,61 @@ res.forEach(e => {
 else{
 ht='nope'
 }
+
 container.innerHTML=ht;
+const buts=document.querySelectorAll(`.tbut`);
+buts.forEach(e=>{
+  e.addEventListener('click',()=>{
+    fetchvid(e.innerText);
+  })
+})
 
 }
+
+
+
+async function fetchvid(id){
+  const url=`https://imdb-api.com/en/API/YouTubeTrailer/k_bb3vvmqp/${id}`;
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log(data.videoUrl);
+  let vidurl = data.videoUrl;
+  vidurl = vidurl.split('=');
+  vidurl = vidurl[vidurl.length-1];
+  console.log(vidurl)
+ document.querySelector('.tbutf').innerHTML='';
+  document.querySelector('.video-flex').innerHTML=`<iframe class="video"
+  src="https://www.youtube.com/embed/${vidurl}">
+  </iframe>`;
+}
+
+
+
+
+
+
+
+const tbut = document.querySelectorAll('.tbutc');
+
+//tbut.forEach(t=>{
+
+//const tt= t.textContent;
+
+//t.addEventListener('click',()=>{
+
+ // console.log(tt);
+  //document.querySelector('.tbutf').innerHTML='';
+  //document.querySelector('.video-flex').innerHTML=`<iframe class="video"
+   //src="https://www.youtube.com/embed/Jvurpf91omw">
+   //</iframe>`;
+  
+
+//})
+
+//})
+
+
+
 
 
 
