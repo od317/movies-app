@@ -57,10 +57,10 @@
 }
 
 .carousel2{
-    width: 70vw;
-    height: 20vh;
+    width: 80vw;
+    height: 25vh;
     min-height: 200px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 .carousel2 .carousel-inner .carousel-item{
     width: 100%;
@@ -68,9 +68,9 @@
 }
 
 .carousel2 .carousel-inner .carousel-item img{
-    height: 20vh;
+    height: 25vh;
     border-radius:10px ;
-    width:70vw;
+    width:80vw;
 }
 
 

@@ -46,4 +46,10 @@ app.get('/view',(req,res)=>{
 })
 
 
+
+app.get('/gener/:id',(req,res)=>{
+    res.render('gen',{id:req.params.id});
+})
+
+
 app.listen(PORT);

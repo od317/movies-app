@@ -1,13 +1,15 @@
 const searchq = document.querySelector('.searchq');
+const searchq2 = document.querySelector('.searchq2');
 const container = document.querySelector('.contanier');
 
+
 const form = document.querySelector('.form');
-
-form.addEventListener('submit',()=>{
-  fetchapi(`https://imdb-api.com/API/AdvancedSearch/k_bb3vvmqp?title=${searchq.innerHTML}&count=100`);
-})
-
-
+  if(searchq!=null)
+  fetchapi(`https://imdb-api.com/API/AdvancedSearch/k_unodv9vg?title=${searchq.innerHTML}&count=100`);
+  if(searchq2!=null)
+  fetchapi(`https://imdb-api.com/API/AdvancedSearch/k_unodv9vg/?genres=${searchq2.innerHTML}&sort=boxoffice_gross_us,desc&count=100`);
+  
+  
 
 async function fetchapi(url){
 console.log(url);
@@ -53,8 +55,9 @@ if(tbut!=null){
 
 async function fetchvid(){
   
-   const response = await fetch(`https://imdb-api.com/en/API/YouTubeTrailer/k_bb3vvmqp/${document.querySelector('.view-id').innerText}`);
+   const response = await fetch(`https://imdb-api.com/en/API/YouTubeTrailer/k_unodv9vg/${document.querySelector('.view-id').innerText}`);
    const data = await response.json();
+   console.log('')
    const vidid = data.videoId;
   document.querySelector('.tbutf').innerHTML='';
   const videoflex =document.querySelector('.video-flex'); 
