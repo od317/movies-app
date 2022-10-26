@@ -6,8 +6,12 @@
  --bg: #141514;
  --tc: white;
 }
-.home-but{
-
+.spin{
+  width: 100vw;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items:center;
 }
 .nav-grid{
   display: grid;

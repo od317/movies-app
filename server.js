@@ -46,6 +46,10 @@ app.get('/view',(req,res)=>{
 })
 
 
+app.get('/hv/:id',(req,res)=>{
+    res.render('view2',{id:req.params.id})
+})
+
 
 app.get('/gener/:id',(req,res)=>{
     res.render('gen',{id:req.params.id});
