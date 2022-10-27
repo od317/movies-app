@@ -17,10 +17,14 @@
 }
 
 
+.video-flex{
+    display: none;
+}
 
 
-
-
+.tbutf{
+    width: 100vw;
+}
 
 .tbutc{
     background-color: rgb(15, 15, 15);
@@ -49,4 +53,62 @@
 
 .view-id{
     display: none;
+}
+
+.largev{
+    display: none;
+}
+
+@media only screen and (min-width:450px){
+    .largev{
+        display: block;
+    }
+    .smallv{
+        display: none;
+    }
+    .view-header{
+
+        width: 100vw;
+    
+    }
+.view-title{
+    margin-left: 3rem;
+}
+.view-img{
+height: 50%;
+width: 30%;
+}
+
+.img-view-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tbutc{
+    background-color: rgb(15, 15, 15);
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    padding: 3rem;
+}
+
+
+
+.video-flex{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-y{
+    height: 70vh;
+    width: 60%;
+}
+
+.view-sec{
+    font-size:1.5rem ;
+}
 }

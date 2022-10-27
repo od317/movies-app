@@ -62,12 +62,12 @@
 
 
 .card-title{
-    font-size:.7rem;
+    font-size:.9rem;
     padding: .4rem;
     
 }
 .rating{
-    font-size:.6rem;
+    font-size:.7rem;
     padding: .4rem;
 }
 
@@ -110,9 +110,37 @@ width: 70%;
 height: 90%;
 }
 
+.search-card-desc{
+    padding: .5rem;
+    font-size: .8rem;
+    display: none;
+}
+
+@media only screen and (min-width:600px){
+
+    .contanier{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(5,1fr);
+        grid-column-gap: 5%;
+        grid-row-gap: 3.6rem;
+        padding-bottom: 2rem;
+    }
+
+}
 
 
+@media only screen and (min-width:1200px){
 
+  
+
+    .search-card-desc{
+        padding: .5rem;
+        font-size: 80%;
+        display: block;
+    }   
+
+}
 
 .id{
     display: none;

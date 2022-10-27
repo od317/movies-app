@@ -2,8 +2,9 @@ const searchq = document.querySelector('.searchq');
 const searchq2 = document.querySelector('.searchq2');
 const container = document.querySelector('.contanier');
 
-const apikey = "k_bb3vvmqp";
-
+const apikey = "k_unodv9vg";
+const apikey1 = "k_bb3vvmqp";
+const apikey2 = "k_unodv9vg";
 const form = document.querySelector('.form');
   if(searchq!=null)
   fetchapi(`https://imdb-api.com/API/AdvancedSearch/${apikey}?title=${searchq.innerHTML}&count=100`);
@@ -24,11 +25,17 @@ if(res!=null){
   let i = 0;
 res.forEach(e => {
     i++;
+    let plot = String(e.plot);
+    if(plot.length>60){
+      plot = plot.substring(0,60) + "...";
+    }
     ht+=`<div class="search-card">
     <img src="${e.image}" class="cont-card">
     <div class="hid-card">
     <label class="card-title">${e.title}</label>
+    <br>
     <label class="rating">Rating: ${e.imDbRating}</label>
+    <p class="search-card-desc">${plot}</p>
     </div>
 
     <a href="/view?title=${e.title}&img=${e.image}&rate=${e.imDbRating}&year=${e.description}&id=${e.id}&runtimeStr=${e.runtimeStr}&genres=${e.genres}&contentRating=${e.contentRating}&imDbRating=${e.imDbRating}&plot=${e.plot}&actors=${e.stars}" type="button" class="viewbut">
@@ -60,10 +67,9 @@ async function fetchvid(id){
    const data = await response.json();
    console.log('')
    const vidid = data.videoId;
-  document.querySelector('.tbutf').innerHTML='';
+  document.querySelector('.tbutf').innerHTML=``;
   const videoflex =document.querySelector('.video-flex'); 
-    videoflex.style.height='30vh';
-  videoflex.innerHTML=`<iframe 
+  videoflex.innerHTML=`<iframe class="video-y"
   src="https://www.youtube.com/embed/${vidid}">
   </iframe>`;
   console.log(`https://www.youtube.com/embed/${vidid}`);
@@ -90,7 +96,10 @@ async function fetchview(){
 
  <div class="view-header d-flex justify-content-center flex-column">
      <label class="view-title mb-3">${res.title}</label>
-     <img src="${res.image} " alt="">
+     <img class="view-img smallv" src="${res.image} " alt="">
+     <div class="img-view-flex largev">
+    <img class="view-img" src="${res.image}" alt="">
+  </div>
  </div>  
   
  
@@ -102,7 +111,7 @@ async function fetchview(){
  
    </div>
  
-   <div class="d-flex justify-content-center mb-3 video-flex">
+   <div class="video-flex">
     
  </div>
  

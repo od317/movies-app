@@ -3,8 +3,8 @@
 @import 'view.css';
 
 :root{
- --bg: #141514;
- --tc: white;
+ --bg: #05141f;
+ --tc: #0C2D48;
 }
 .spin{
   width: 100vw;
@@ -21,9 +21,14 @@
 html body{
     background-color: var(--bg);
     color:white;
+    overflow-x: hidden;
 
 }
 .none{
   width: 100vw;    
-  height: 9vh;
+  height: 8vh;
+}
+
+.navbar{
+  background-color: var(--tc);
 }
