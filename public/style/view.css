@@ -4,6 +4,8 @@
 
 }
 
+
+
 .view-title{
     font-size: 2rem;
 }
@@ -36,6 +38,11 @@
     justify-content: center;
     height: 30vh;
     padding: 3rem;
+}
+
+.video-y{
+ height: 35vh;
+ width: 90%;
 }
 
 .tbut{
