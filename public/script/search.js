@@ -95,7 +95,7 @@ async function fetchview(){
  document.querySelector('.spin').innerHTML='';
  view_body.innerHTML = `<label class="sec-label view-id" for="">${res.id}</label>
 
- <label class="view-title mb-3 on-flex"><%= locals.title %></label>
+ <label class="view-title mb-3 on-flex">${res.title}</label>
 
  <div class="flex-view-large">
  
