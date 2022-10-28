@@ -1,7 +1,12 @@
 <label class="sec-label view-id" for=""><%= locals.id %></label>
 
-<div class="view-header d-flex flex-column justify-content-center ">
-    <label class="view-title mb-3"><%= locals.title %></label>
+
+<label class="view-title mb-3 on-flex"><%= locals.title %></label>
+
+<div class="flex-view-large">
+
+<div class="view-header d-flex flex-column justify-content-center">
+    <label class="view-title mb-3 no-flex"><%= locals.title %></label>
     <img class="view-img smallv" src="<%= locals.img %>" alt="">
     <div class="img-view-flex largev">
     <img class="view-img" src="<%= locals.img %>" alt="">
@@ -9,7 +14,7 @@
   </div>  
  
 
-<div class="d-flex justify-content-center mb-2 tbutf">
+<div class="d-flex justify-content-center mb-2 tbutf" id="tbutf">
         
     <div class="tbutc d-flex justify-content-center mb-2">
     <button class="tbut t1"><ion-icon name="arrow-dropright" class="arrow"></ion-icon></button>  
@@ -22,13 +27,16 @@
   </div>
 
 
+</div>
+
+
 <div class=" view-sec d-flex justify-content-center flex-column">
-<label class="sec-label" for="">imdRatring: <%= locals.rate %></label>
-<label class="sec-label" for="">contentRating: <%= locals.contentRating %></label>
-<label class="sec-label" for="">year: <%= locals.year %></label>
-<label class="sec-label" for="">genres: <%= locals.genres %></label>
-<label class="sec-label" for="">time: <%= locals.runtimeStr %></label>
-<label class="sec-label" for="">plot: <%= locals.plot %></label>
-<label class="sec-label" for="">actorss: <%= locals.actors %></label>
+<label class="sec-label tc" for="">imdRatring: <%= locals.rate %></label>
+<label class="sec-label tc" for="">contentRating: <%= locals.contentRating %></label>
+<label class="sec-label tc" for="">year: <%= locals.year %></label>
+<label class="sec-label tc" for="">genres: <%= locals.genres %></label>
+<label class="sec-label tc" for="">time: <%= locals.runtimeStr %></label>
+<label class="sec-label tc" for="">plot: <%= locals.plot %></label>
+<label class="sec-label tc" for="">actorss: <%= locals.actors %></label>
 </div>
 

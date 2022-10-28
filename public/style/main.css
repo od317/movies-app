@@ -32,3 +32,20 @@ html body{
 .navbar{
   background-color: var(--tc);
 }
+
+.offcanvas,.offcanvas-header,.offcanvas-body {
+  background-color: var(--tc);
+}
+
+.form .header-button{
+  background-color:  #145DA0
+  ;
+  color:white;
+}
+
+.form .header-button:hover{
+  background-color: #81599F
+
+  ;
+
+}

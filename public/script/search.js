@@ -67,8 +67,9 @@ async function fetchvid(id){
    const data = await response.json();
    console.log('')
    const vidid = data.videoId;
-  document.querySelector('.tbutf').innerHTML=``;
-  const videoflex =document.querySelector('.video-flex'); 
+   document.querySelector('.tbutf').innerHTML=``;
+   document.querySelector('.tbutf').remove();
+   const videoflex =document.querySelector('.video-flex'); 
   videoflex.innerHTML=`<iframe class="video-y"
   src="https://www.youtube.com/embed/${vidid}">
   </iframe>`;
@@ -94,8 +95,14 @@ async function fetchview(){
  document.querySelector('.spin').innerHTML='';
  view_body.innerHTML = `<label class="sec-label view-id" for="">${res.id}</label>
 
+ <label class="view-title mb-3 on-flex"><%= locals.title %></label>
+
+ <div class="flex-view-large">
+ 
+
+
  <div class="view-header d-flex justify-content-center flex-column">
-     <label class="view-title mb-3">${res.title}</label>
+     <label class="view-title mb-3 no-flex">${res.title}</label>
      <img class="view-img smallv" src="${res.image} " alt="">
      <div class="img-view-flex largev">
     <img class="view-img" src="${res.image}" alt="">
@@ -115,15 +122,16 @@ async function fetchview(){
     
  </div>
  
+ </div>
  
  <div class=" view-sec d-flex justify-content-center flex-column">
- <label class="sec-label" for="">imdRatring: ${res.imDbRating}</label>
- <label class="sec-label" for="">contentRating: ${res.contentRating}</label>
- <label class="sec-label" for="">year: ${res.description}</label>
- <label class="sec-label" for="">genres: ${res.genres}</label>
- <label class="sec-label" for="">time: ${res.runtimeStr}</label>
- <label class="sec-label" for="">plot: ${res.plot}</label>
- <label class="sec-label" for="">actorss: ${res.stars}</label>
+ <label class="sec-label tc" for="">imdRatring: ${res.imDbRating}</label>
+ <label class="sec-label tc" for="">contentRating: ${res.contentRating}</label>
+ <label class="sec-label tc" for="">year: ${res.description}</label>
+ <label class="sec-label tc" for="">genres: ${res.genres}</label>
+ <label class="sec-label tc" for="">time: ${res.runtimeStr}</label>
+ <label class="sec-label tc" for="">plot: ${res.plot}</label>
+ <label class="sec-label tc" for="">actorss: ${res.stars}</label>
  </div>
  
  `;
